@@ -59,40 +59,40 @@ class App extends React.Component {
       ],
       matchesRoundTwo: [
         {
-          skater1: null,
-          skater2: null,
+          skater1: "",
+          skater2: "",
           target: 0,
           inputName: "entry.1259456267",
         },
         {
-          skater1: null,
-          skater2: null,
+          skater1: "",
+          skater2: "",
           target: 0,
           inputName: "entry.469626937",
         },
         {
-          skater1: null,
-          skater2: null,
+          skater1: "",
+          skater2: "",
           target: 1,
           inputName: "entry.1918032954",
         },
         {
-          skater1: null,
-          skater2: null,
+          skater1: "",
+          skater2: "",
           target: 1,
           inputName: "entry.1194770860",
         },
       ],
       matchesRoundThree: [
         {
-          skater1: null,
-          skater2: null,
+          skater1: "",
+          skater2: "",
           target: 0,
           inputName: "entry.826620085",
         },
         {
-          skater1: null,
-          skater2: null,
+          skater1: "",
+          skater2: "",
           target: 0,
           inputName: "entry.628055565",
         },
@@ -100,13 +100,13 @@ class App extends React.Component {
 
       matchesRoundFour: [
         {
-          skater1: null,
-          skater2: null,
+          skater1: "",
+          skater2: "",
           inputName: "entry.913266597",
         },
       ],
 
-      winner: null,
+      winner: "",
       submitted: false,
     };
 
@@ -241,10 +241,10 @@ class App extends React.Component {
           className="header-image"
           src="tre-logo.png"
         ></img>
-        {/* <span class="instructions">
+        <span class="instructions">
           ✭ Bracket submissions are closed. Follow&nbsp;
           <a href="https://www.instagram.com/thebuntlive">@thebuntlive</a> to vote! ✭
-        </span> */}
+        </span>
         <iframe
           name="hidden_iframe"
           id="hidden_iframe"
@@ -314,10 +314,10 @@ class App extends React.Component {
             <span>✭</span>
             <span>✭</span>
           </div>
-          {entryForm}
-          {/* <div className="entry-form">
+          {/* {entryForm} */}
+          <div className="entry-form">
             <h2>Bracket submissions are closed.</h2>
-          </div> */}
+          </div>
 
           <div className="tripleStar">
             <span>✭</span>
@@ -326,10 +326,12 @@ class App extends React.Component {
           </div>
           <div className="rules">
             <h1 class="college">Official Rules</h1>
-            <h2>✭ One entry per person. ✭</h2>
-            <h2>✭ Voting 8AM-10PM EST on @thebuntlive. ✭</h2>
-            <h2>✭ You must listen to The Bunt. ✭</h2>
-            <h2></h2>
+            <ul>
+              <li>✭ One entry per person. ✭</li>
+              <li>✭ Bracket Submissions open from September 14th at 9AM EST until September 17th at 10PM EST ✭</li>
+              <li>✭ 24 Hour Bracket Voting Daily Starting Monday September 18th on @thebuntlive ✭</li>
+              <li>✭ You must listen to The Bunt. ✭</li>
+            </ul>
           </div>
           <img
             className="sponsor-logos"

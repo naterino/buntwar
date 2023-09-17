@@ -8,7 +8,7 @@ class Match extends Component {
   }
 
   state = {
-    enabled: true,
+    enabled: false, // Use this to disable the app when the brackets are closed.
     text: "poopoo",
     winner: null,
   };

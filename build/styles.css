@@ -1,5 +1,5 @@
 button:focus {
-	outline: none;
+  outline: none;
 }
 
 /* button:hover {
@@ -7,95 +7,108 @@ button:focus {
 } */
 
 body {
-	background: url(wooden-floor-desktop.jpg);
-	padding-top: 20px;
-	font-family: oswald, sans-serif;
-	overflow-x: hidden;
+  background: url("tre-background.png") #510989;
+  background-position: center;
+  padding-top: 20px;
+  font-family: "apotek-comp", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  overflow-x: hidden;
 }
 
 #root {
-	margin: 30px 0px;
-	position: relative;
+  margin: 30px 0px;
+  position: relative;
 }
 
 a {
-	color: #fff;
+  color: #fff;
 }
 
 .header-image {
-	display: block;
-	margin: auto;
+  display: block;
+  margin: auto;
 }
 
 form {
-	max-width: 1340px;
-	margin: auto;
-	position: relative;
+  max-width: 1340px;
+  margin: auto;
+  position: relative;
 }
 
 .round-container h2 {
-	position: absolute;
-	top: 0;
-	color: #fff;
-	padding: 10px;
-	width: 100%;
-	text-align: center;
-	text-transform: uppercase;
-	border-bottom: 2px #ccc dotted;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  /* border-bottom: 2px #ccc dotted; */
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 img.trophy {
-	position: absolute;
-	max-width: 100%;
-	top: 80px;
-	margin-right: -30px;
-	right: -7px;
+  position: absolute;
+  max-width: 100%;
+  top: 250px;
+  margin-right: -30px;
+  right: -7px;
 }
 
 .instructions {
-	color: #fff;
-	font-size: 28px;
-	width: 100%;
-	text-align: center;
-	display: block;
-	margin: 15px 0 30px;
-}
-
-.college {
-	font-family: octin-college, sans-serif;
+  color: #fff;
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 15px 0 30px;
 }
 
 h2.college {
-	font-size: 1.74em;
+  font-size: 1.74em;
 }
 
 .match-container {
-	margin-bottom: 30px;
-	border-right: 30px solid #fff;
-	width: 100%;
-	z-index: 30;
+  margin-bottom: 30px;
+  /* border-right: 30px solid #fff; */
+  width: 100%;
+  z-index: 30;
+  position: relative;
 }
 
 .match-container button {
-	display: block;
-	width: 100%;
-	border: 0px;
-	height: 30px;
-	font-size: 1.25em;
-	font-weight: 900;
-	text-transform: uppercase;
-	transition: all 500ms ease;
-	background: #fff;
-	font-family: oswald, sans-serif;
-	color: #982728;
+  display: block;
+  width: 100%;
+  border: 0px;
+  height: 30px;
+  font-size: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: all 500ms ease;
+  background: #fff;
+  color: #510989;
+  box-shadow: #87cef1 7px 8px 0px;
+  font-family: "apotek-comp", sans-serif;
+}
+
+.match-container:after {
+  height: 100%;
+  width: 30px;
+  content: "";
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  box-shadow: #87cef1 7px 8px 0px;
 }
 
 .match-container button:enabled {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* .match-container button:hover {
@@ -103,122 +116,119 @@ h2.college {
 } */
 
 .match-container button:first-of-type {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .column {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 100%;
-	flex: 1;
-	align-items: center;
-	justify-content: center;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .round-container {
-	border-left: 2px #ccc dotted;
-	padding-top: 100px;
+  /* border-left: 2px #ccc dotted; */
+  padding-top: 100px;
 }
 
 .round-container.winnerRound {
-	border-right: 2px #ccc dotted;
+  /* border-right: 2px #ccc dotted; */
 }
 
 .roundTwo .match-container button:first-of-type {
-	margin-bottom: 86px;
+  margin-bottom: 86px;
 }
 
 .roundTwo .match-container {
-	margin-bottom: 95px;
+  margin-bottom: 95px;
 }
 
 .roundThree .match-container button:first-of-type {
-	margin-bottom: 210px;
+  margin-bottom: 210px;
 }
 
 .roundThree .match-container {
-	margin-bottom: 210px;
+  margin-bottom: 210px;
 }
 
 .match-container:last-of-type {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .roundFour .match-container {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .roundFour .match-container button:first-of-type {
-	margin-bottom: 420px;
+  margin-bottom: 420px;
 }
 
 span.winner {
-	display: block;
-	width: 100%;
-	height: 30px;
-	background: #fff;
-	color: #982728;
-	text-align: center;
-	font-size: 1.2em;
-	font-weight: bold;
-	text-transform: uppercase;
-	line-height: 30px;
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: #fff;
+  color: #510989;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 30px;
+  box-shadow: #87cef1 7px 8px 0px;
+  z-index: 30;
 }
 
 .tripleStar {
-	text-align: center;
-	margin: 15px;
-	color: #fff;
-	font-size: 30px;
+  text-align: center;
+  margin: 15px;
+  color: #fff;
+  font-size: 30px;
 }
 
 .tripleStar span {
-	margin: 0 15px;
+  margin: 0 15px;
 }
 
 .entry-form {
-	display: block;
-	width: 650px;
-	max-width: 80%;
-	font-size: 24px;
-	margin: 15px auto;
-	color: #fff;
+  display: block;
+  width: 650px;
+  max-width: 80%;
+  font-size: 24px;
+  margin: 15px auto;
+  color: #fff;
 }
 
 .entry-form.thanks {
-	width: 100%;
-	max-width: 100%;
-}
-
-.entry-form.thanks h2 {
-	font-size: 20px;
+  width: 100%;
+  max-width: 100%;
 }
 
 input {
-	width: 305px;
-	float: right;
-	height: 28px;
-	font-size: 28px;
-	font-family: oswald, sans-serif;
+  width: 305px;
+  float: right;
+  height: 28px;
+  font-size: 28px;
 }
 
 .entry-form button {
-	font-family: oswald, sans-serif;
-	font-size: 20px;
-	padding: 2px 60px;
-	text-transform: uppercase;
-	border: 2px solid #fff;
-	background: #982728;
-	color: #fff;
-	margin: 0 5px;
-	cursor: pointer;
+  font-size: 20px;
+  padding: 2px 60px;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  background: #510989;
+  color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  font-family: "apotek-comp", sans-serif;
 }
 
 /* .entry-form button:hover {
@@ -227,173 +237,195 @@ input {
 
 #form_name,
 #form_email {
-	width: 420px;
+  width: 420px;
 }
 
 #form_instagram {
-	width: 270px;
+  width: 270px;
 }
 
 .entry-form p {
-	padding: 0px;
-	margin: 0 auto 10px;
-	max-width: 500px;
+  padding: 0px;
+  margin: 0 auto 10px;
+  max-width: 500px;
 }
 
 .entry-form h2 {
-	text-align: center;
+  text-align: center;
 }
 
 div.buttons {
-	display: block;
-	width: 100%;
-	margin: 15px 0;
-	text-align: center;
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  text-align: center;
 }
 
 .rules {
-	display: block;
-	margin-top: 30px;
-	text-align: center;
-	color: #fff;
+  display: block;
+  margin-top: 30px;
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rules li {
+  margin: 0 0 10px;
+}
+
+.rules ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .rules h1 {
-	font-size: 60px;
-	margin: 10px;
+  font-size: 60px;
+  margin: 10px;
 }
 
 .rules h2 {
-	font-size: 25px;
-	margin: 5px;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.sponsor-logos {
+  margin: 30px auto;
+  display: block;
 }
 
 @media only screen and (max-width: 800px) {
-	.container {
-		width: 100%;
-		display: block;
-		overflow-x: scroll;
-	}
+  .container {
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+  }
 
-	.match-container {
-		margin-bottom: 25px;
-		border-right: 25px solid #fff;
-		width: 100%;
-		z-index: 30;
-	}
+  .match-container {
+    margin-bottom: 25px;
+    /* border-right: 25px solid #fff; */
+    width: 100%;
+    z-index: 30;
+  }
 
-	.match-container button {
-		display: block;
-		width: 100%;
-		border: 0px;
-		height: 25px;
-		font-size: 10px;
-	}
+  .match-container button {
+    display: block;
+    width: 100%;
+    border: 0px;
+    height: 25px;
+    font-size: 16px;
+  }
 
-	.row {
-		width: 100%;
-		min-width: 600px;
-	}
+  .row {
+    width: 100%;
+    min-width: 600px;
+  }
 
-	.instructions {
-		color: #fff;
-		font-size: 14px;
-		width: 100%;
-		text-align: center;
-		display: block;
-		margin: 15px 0 30px;
-	}
+  .instructions {
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 15px 0 30px;
+  }
+  /* 
+  .sponsor-logos {
+    right: 0px;
+    position: absolute;
+    max-width: 140px;
+  } */
 
-	img.trophy {
-		max-width: 160%;
-	}
+  .trophy {
+    max-width: 125%;
+  }
 
-	.match-container button:first-of-type {
-		margin-bottom: 16px;
-	}
+  .match-container button:first-of-type {
+    margin-bottom: 16px;
+  }
 
-	/* .match-container button:hover {
+  /* .match-container button:hover {
 		font-size: 11px;
 	} */
-	.round-container h2 {
-		font-size: 13px;
-		text-align: center;
-	}
-	h2.college {
-		font-size: 15px !important;
-	}
+  .round-container h2 {
+    font-size: 13px;
+    text-align: center;
+  }
+  h2.college {
+    font-size: 15px !important;
+  }
 
-	.round-container {
-		border-left: 2px #ccc dotted;
-		padding-top: 65px;
-		position: relative;
-	}
+  .round-container {
+    /* border-left: 2px #ccc dotted; */
+    padding-top: 65px;
+    position: relative;
+  }
 
-	.roundTwo .match-container button:first-of-type {
-		margin-bottom: 65px;
-	}
+  .roundTwo .match-container button:first-of-type {
+    margin-bottom: 65px;
+  }
 
-	.roundTwo .match-container {
-		margin-bottom: 65px;
-	}
+  .roundTwo .match-container {
+    margin-bottom: 65px;
+  }
 
-	.roundThree .match-container button:first-of-type {
-		margin-bottom: 140px;
-	}
+  .roundThree .match-container button:first-of-type {
+    margin-bottom: 140px;
+  }
 
-	.roundThree .match-container {
-		margin-bottom: 140px;
-	}
+  .roundThree .match-container {
+    margin-bottom: 140px;
+  }
 
-	.match-container:last-of-type {
-		margin-bottom: 0;
-	}
+  .match-container:last-of-type {
+    margin-bottom: 0;
+  }
 
-	.roundFour .match-container {
-		margin-bottom: 0;
-	}
-	.roundFour .match-container button:first-of-type {
-		margin-bottom: 210px;
-	}
+  .roundFour .match-container {
+    margin-bottom: 0;
+  }
+  .roundFour .match-container button:first-of-type {
+    margin-bottom: 210px;
+  }
 
-	#form_name,
-	#form_email,
-	#form_instagram {
-		width: 100%;
-		height: 36px;
-		box-sizing: border-box;
-		margin-bottom: 15px;
-		border-radius: 0px;
-		font-size: 16px;
-	}
+  #form_name,
+  #form_email,
+  #form_instagram {
+    width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 0px;
+    font-size: 16px;
+  }
 
-	.entry-form p {
-		padding: 0px;
-		font-size: 16px;
-		margin: 0 0 10px;
-	}
+  .entry-form p {
+    padding: 0px;
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
 
-	.entry-form h2 {
-		font-size: 24px;
-	}
+  .entry-form h2 {
+    font-size: 24px;
+  }
 
-	div.buttons {
-		margin-top: 15px;
-	}
+  div.buttons {
+    margin-top: 15px;
+  }
 
-	div.buttons button {
-		width: 100%;
-		margin: 0 0 5px;
-		text-align: center;
-	}
+  div.buttons button {
+    width: 100%;
+    margin: 0 0 5px;
+    text-align: center;
+  }
 
-	.rules h1 {
-		font-size: 35px;
-		margin: 10px;
-	}
+  .rules h1 {
+    font-size: 35px;
+    margin: 10px;
+  }
 
-	.rules h2 {
-		font-size: 16px;
-		margin: 5px;
-	}
+  .rules h2 {
+    font-size: 16px;
+    margin: 5px;
+  }
 }

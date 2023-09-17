@@ -212,10 +212,6 @@ span.winner {
   max-width: 100%;
 }
 
-.entry-form.thanks h2 {
-  font-size: 20px;
-}
-
 input {
   width: 305px;
   float: right;
@@ -270,6 +266,16 @@ div.buttons {
   margin-top: 30px;
   text-align: center;
   color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rules li {
+  margin: 0 0 10px;
+}
+
+.rules ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .rules h1 {
